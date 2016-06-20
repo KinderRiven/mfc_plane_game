@@ -1,0 +1,683 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#include ""res\\MyGame.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#include ""l.CHS\\afxprint.rc""    // 打印/打印预览资源\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MyGame.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                    ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",                 ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",              ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                     ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 MyGame(&A)...",            ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 MyGame"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "MyGame，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2014",IDC_STATIC,39,25,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 345, 210
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "游戏设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "开始游戏",IDOK,179,113,93,42
+    COMBOBOX        IDC_COMBO1,71,16,61,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "【选择关卡】：",IDC_STATIC,7,20,57,8
+    LTEXT           "【英雄血量】：",IDC_STATIC,7,52,61,8
+    LTEXT           "【英雄弹药】：",IDC_STATIC,7,82,64,8
+    EDITTEXT        IDC_EDIT2,71,46,63,14,ES_AUTOHSCROLL
+    LTEXT           "【请输入1-10万的整数】",IDC_STATIC,146,51,126,19
+    EDITTEXT        IDC_EDIT3,70,76,65,14,ES_AUTOHSCROLL
+    LTEXT           "【请输入1-2000的正整数】",IDC_STATIC,145,82,127,8
+    LTEXT           "",IDC_STATIC,7,113,8,8
+    LTEXT           "【英雄复活次数】：",IDC_STATIC,145,20,94,8
+    COMBOBOX        IDC_COMBO2,239,16,42,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "退出",IDOK2,278,164,60,24
+    PUSHBUTTON      "关于作者",IDC_BUTTON1,7,132,52,23
+    PUSHBUTTON      "隐藏人物",IDC_BUTTON2,90,132,55,23
+    PUSHBUTTON      "操作说明",IDC_BUTTON3,8,164,51,24
+    LTEXT           "【玩家数量】：",IDC_STATIC,7,113,71,8
+    COMBOBOX        IDC_COMBO4,72,107,60,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "游戏设置",IDC_BUTTON4,90,164,55,24
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 309, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于作者"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "制作者：韩书楷",IDC_STATIC,119,54,57,15
+    CONTROL         "www.kinderriven.com",IDC_MFCLINK1,"MfcLink",WS_TABSTOP,204,150,87,12
+    LTEXT           "更多信息欢迎访问：",IDC_STATIC,205,134,80,11
+    LTEXT           "个人主页：",IDC_STATIC,158,148,43,12
+    LTEXT           "专业：物联网一班",IDC_STATIC,115,78,110,23
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 309, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "操作说明"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "小键盘4",IDC_STATIC,205,151,63,15
+    LTEXT           "【上/下/左/右】：",IDC_STATIC,29,34,74,18
+    LTEXT           "【普通攻击】：",IDC_STATIC,29,58,65,12
+    LTEXT           "【蓝色闪电】：",IDC_STATIC,29,82,65,12
+    LTEXT           "【红色风暴】：",IDC_STATIC,29,107,65,12
+    LTEXT           "【玩家二】",IDC_STATIC,205,7,63,15
+    LTEXT           "【↑/↓/←/→】",IDC_STATIC,205,32,62,20
+    LTEXT           "【W/S/A/D】",IDC_STATIC,115,32,62,20
+    LTEXT           "J",IDC_STATIC,116,53,39,17
+    LTEXT           "K",IDC_STATIC,116,82,39,17
+    LTEXT           "L",IDC_STATIC,116,107,39,17
+    LTEXT           "小键盘4",IDC_STATIC,205,53,39,17
+    LTEXT           "小键盘5",IDC_STATIC,205,82,39,17
+    LTEXT           "小键盘6",IDC_STATIC,205,107,39,17
+    LTEXT           "【合体大招】：",IDC_STATIC,29,129,64,22
+    LTEXT           "P",IDC_STATIC,116,148,39,22
+    LTEXT           "小键盘8",IDC_STATIC,205,129,39,22
+    LTEXT           "【F1】：暂停游戏",IDC_STATIC,29,7,67,18
+    LTEXT           "【导弹流】：",IDC_STATIC,37,151,52,19
+    LTEXT           "I",IDC_STATIC,116,129,38,15
+    LTEXT           "【玩家一】",IDC_STATIC,116,7,57,22
+END
+
+IDD_DIALOG4 DIALOGEX 0, 0, 361, 186
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "游戏设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "【小自杀型敌机密度】：",IDC_STATIC,15,82,90,21
+    LTEXT           "【小火力敌机密度】：",IDC_STATIC,15,16,91,19
+    LTEXT           "【中火力敌机密度】：",IDC_STATIC,15,49,91,21
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_TOOLTIPS | WS_TABSTOP,106,7,75,25
+    CONTROL         "",IDC_SLIDER2,"msctls_trackbar32",TBS_BOTH | TBS_TOOLTIPS | WS_TABSTOP,106,41,75,23
+    CONTROL         "",IDC_SLIDER3,"msctls_trackbar32",TBS_BOTH | TBS_TOOLTIPS | WS_TABSTOP,106,71,75,22
+    LTEXT           "【BOSS1能力值】：",IDC_STATIC,191,16,91,24
+    LTEXT           "【BOSS2能力值】：",IDC_STATIC,191,49,91,24
+    LTEXT           "【BOSS3能力值】：",IDC_STATIC,191,82,91,20
+    LTEXT           "【BOSS4能力值】：",IDC_STATIC,191,112,91,20
+    CONTROL         "",IDC_SLIDER5,"msctls_trackbar32",TBS_BOTH | TBS_TOOLTIPS | WS_TABSTOP,282,7,70,23
+    CONTROL         "",IDC_SLIDER6,"msctls_trackbar32",TBS_BOTH | TBS_TOOLTIPS | WS_TABSTOP,282,38,70,23
+    CONTROL         "",IDC_SLIDER7,"msctls_trackbar32",TBS_BOTH | TBS_TOOLTIPS | WS_TABSTOP,282,71,70,23
+    CONTROL         "",IDC_SLIDER8,"msctls_trackbar32",TBS_BOTH | TBS_TOOLTIPS | WS_TABSTOP,282,101,70,23
+    LTEXT           "【物品掉落概率】：",IDC_STATIC,15,112,91,23
+    CONTROL         "",IDC_SLIDER9,"msctls_trackbar32",TBS_BOTH | TBS_TOOLTIPS | WS_TABSTOP,106,100,75,24
+    PUSHBUTTON      "新手",IDC_BUTTON1,15,152,37,20
+    PUSHBUTTON      "普通",IDC_BUTTON2,60,152,39,20
+    PUSHBUTTON      "困难",IDC_BUTTON3,113,152,39,20
+    PUSHBUTTON      "完成设置",IDC_BUTTON4,233,135,99,37
+    PUSHBUTTON      "地狱",IDC_BUTTON5,161,152,43,20
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "TODO:  <公司名>"
+            VALUE "FileDescription", "MyGame"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "MyGame.exe"
+            VALUE "LegalCopyright", "TODO:  (C) <公司名>。  保留所有权利。"
+            VALUE "OriginalFilename", "MyGame.exe"
+            VALUE "ProductName", "TODO:  <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 338
+        VERTGUIDE, 31
+        VERTGUIDE, 59
+        VERTGUIDE, 90
+        VERTGUIDE, 120
+        VERTGUIDE, 145
+        VERTGUIDE, 179
+        VERTGUIDE, 211
+        VERTGUIDE, 239
+        VERTGUIDE, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+        HORZGUIDE, 28
+        HORZGUIDE, 60
+        HORZGUIDE, 90
+        HORZGUIDE, 121
+        HORZGUIDE, 132
+        HORZGUIDE, 155
+        HORZGUIDE, 164
+        HORZGUIDE, 188
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+        HORZGUIDE, 160
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        VERTGUIDE, 29
+        VERTGUIDE, 81
+        VERTGUIDE, 116
+        VERTGUIDE, 162
+        VERTGUIDE, 205
+        VERTGUIDE, 231
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+        HORZGUIDE, 25
+        HORZGUIDE, 52
+        HORZGUIDE, 70
+        HORZGUIDE, 82
+        HORZGUIDE, 107
+        HORZGUIDE, 129
+        HORZGUIDE, 151
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 352
+        VERTGUIDE, 7
+        VERTGUIDE, 8
+        VERTGUIDE, 15
+        VERTGUIDE, 60
+        VERTGUIDE, 106
+        VERTGUIDE, 120
+        VERTGUIDE, 181
+        VERTGUIDE, 282
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+        HORZGUIDE, 16
+        HORZGUIDE, 49
+        HORZGUIDE, 82
+        HORZGUIDE, 112
+        HORZGUIDE, 135
+        HORZGUIDE, 152
+        HORZGUIDE, 172
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+BackGround1             BITMAP                  "res\\bg1.bmp"
+BackGround2             BITMAP                  "res\\bg2.bmp"
+BackGround3             BITMAP                  "res\\gb3.bmp"
+Hero1                   BITMAP                  "res\\hero1-1.bmp"
+Enemyx                  BITMAP                  "res\\enemy1.bmp"
+Bullet1                 BITMAP                  "res\\bullet1.bmp"
+Exp_B                   BITMAP                  "res\\e_Big.bmp"
+Exp_L                   BITMAP                  "res\\e_Little.BMP"
+Exp_M                   BITMAP                  "res\\e_Mid.BMP"
+Player1_State           BITMAP                  "res\\Player1.bmp"
+Player1_State2          BITMAP                  "res\\player1-1.bmp"
+Player1_State3          BITMAP                  "res\\人物1_副本2.bmp"
+score1                  BITMAP                  "res\\score1.bmp"
+score1_1                BITMAP                  "res\\score1_1.bmp"
+Enemyy                  BITMAP                  "res\\enemy3.bmp"
+Bullet2                 BITMAP                  "res\\敌机子弹04.BMP"
+Bullet3                 BITMAP                  "res\\子弹00.BMP"
+Bullet4                 BITMAP                  "res\\闪电子弹.bmp"
+BackGround0             BITMAP                  "res\\Begin.bmp"
+Enemy_y1                BITMAP                  "res\\黄色飞机右.bmp"
+Enemy_y3                BITMAP                  "res\\黄色飞机右上.bmp"
+Enemy_y2                BITMAP                  "res\\黄色飞机左.bmp"
+Enemy_y4                BITMAP                  "res\\黄色飞机左上.bmp"
+BOSSX                   BITMAP                  "res\\大型敌机00.bmp"
+Bullet5                 BITMAP                  "res\\BOSS子弹.bmp"
+BackGround00            BITMAP                  "res\\GameEnd.bmp"
+BOSSY                   BITMAP                  "res\\BOSS2.bmp"
+BOSSZ                   BITMAP                  "res\\BOSS3.bmp"
+BackGround4             BITMAP                  "res\\bg4.bmp"
+Bullet6                 BITMAP                  "res\\BulletL.bmp"
+BackGroundW             BITMAP                  "res\\bgwin.bmp"
+Hero2                   BITMAP                  "res\\Hero2.bmp"
+Player2_State1          BITMAP                  "res\\人物状态栏2-3.bmp"
+hero3                   BITMAP                  "res\\Hero_Player2.bmp"
+hero4                   BITMAP                  "res\\Hero4.bmp"
+BackGroundB             BITMAP                  "res\\轰炸！.bmp"
+BOSSK                   BITMAP                  "res\\合体BOSSX.bmp"
+Bullet7                 BITMAP                  "res\\BOOSK子弹.bmp"
+BackGroundBB            BITMAP                  "res\\炸弹准备.bmp"
+Talk1                   BITMAP                  "res\\对话1.bmp"
+Talk2                   BITMAP                  "res\\对话2.bmp"
+Talk3                   BITMAP                  "res\\Talk3.bmp"
+Talk4                   BITMAP                  "res\\Talk4.bmp"
+Talk5                   BITMAP                  "res\\Talk5.bmp"
+Talk6                   BITMAP                  "res\\Talk6.bmp"
+Talk7                   BITMAP                  "res\\Talk7.bmp"
+Talk8                   BITMAP                  "res\\Talk8.bmp"
+Talk9                   BITMAP                  "res\\Talk9.bmp"
+Thing                   BITMAP                  "res\\T1.bmp"
+Thing2                  BITMAP                  "res\\T2.bmp"
+Thing3                  BITMAP                  "res\\T3.bmp"
+Thing4                  BITMAP                  "res\\T4.bmp"
+Enemy_y5                BITMAP                  "res\\敌人.bmp"
+Enemy_y6                BITMAP                  "res\\敌直升机.bmp"
+Enemy_y7                BITMAP                  "res\\敌直升机X.bmp"
+Enemy_y8                BITMAP                  "res\\敌直升机Y.bmp"
+Bullet8                 BITMAP                  "res\\导弹.bmp"
+BackGroundF             BITMAP                  "res\\沙漠背景.bmp"
+Talk10                  BITMAP                  "res\\Talk10.bmp"
+Talk11                  BITMAP                  "res\\Talk11.bmp"
+Talk12                  BITMAP                  "res\\Talk12.bmp"
+Talk13                  BITMAP                  "res\\Talk13.bmp"
+Talk14                  BITMAP                  "res\\Talk14.bmp"
+Talk15                  BITMAP                  "res\\Talk15.bmp"
+Talk16                  BITMAP                  "res\\Talk16.bmp"
+Talk17                  BITMAP                  "res\\Talk17.bmp"
+Talk18                  BITMAP                  "res\\Talk18.bmp"
+Talk19                  BITMAP                  "res\\Talk19.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG1 DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 9, 0
+0xc0cb, 0xf6cd, 0xadc9, 0xd6c1, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0xeccc, 0xd5bf, 0xaed6, 0xc7b3, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0xaad1, 0xabc9, 0xbfcf, 0xc8b9, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0xb5b0, 0xb9d2, 0xaed6, 0xc7b3, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0xd5d6, 0xabbc, 0xd4b0, 0xf7d6, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0xc0cb, 0xf1c9, 0xb3c9, 0xaec4, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0xeed7, 0xd5d6, 0xaed6, 0xbdd5, "\000" 
+    IDC_COMBO2, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0032, 
+    0
+END
+
+IDD_DIALOG2 DLGINIT
+BEGIN
+    IDC_MFCLINK1, 0x37c, 157, 0
+0x4d3c, 0x4346, 0x694c, 0x6b6e, 0x555f, 0x6c72, 0x3c3e, 0x4d2f, 0x4346, 
+0x694c, 0x6b6e, 0x555f, 0x6c72, 0x3c3e, 0x464d, 0x4c43, 0x6e69, 0x5f6b, 
+0x7255, 0x506c, 0x6572, 0x6966, 0x3e78, 0x2f3c, 0x464d, 0x4c43, 0x6e69, 
+0x5f6b, 0x7255, 0x506c, 0x6572, 0x6966, 0x3e78, 0x4d3c, 0x4346, 0x694c, 
+0x6b6e, 0x545f, 0x6f6f, 0x746c, 0x7069, 0x3c3e, 0x4d2f, 0x4346, 0x694c, 
+0x6b6e, 0x545f, 0x6f6f, 0x746c, 0x7069, 0x3c3e, 0x464d, 0x4c43, 0x6e69, 
+0x5f6b, 0x7546, 0x6c6c, 0x6554, 0x7478, 0x6f54, 0x6c6f, 0x6974, 0x3e70, 
+0x4146, 0x534c, 0x3c45, 0x4d2f, 0x4346, 0x694c, 0x6b6e, 0x465f, 0x6c75, 
+0x546c, 0x7865, 0x5474, 0x6f6f, 0x746c, 0x7069, "\076" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失败。  请确保 OLE 库是正确的版本。"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "MyGame\n\nMyGame\n\n\nMyGame.Document\nMyGame.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "MyGame"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+    ID_FILE_PAGE_SETUP      "更改打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "更改打印机选项和打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_DIRECT    "使用当前选项打印活动文档\n快速打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权信息\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "清除所选内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制所选内容，将其放入剪贴板\n复制"
+    ID_EDIT_CUT             "剪切所选内容，将其放入剪贴板\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "重做上次撤消的操作\n重做"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n切换工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "将窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到上一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预览"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#include "res\MyGame.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#include "l.CHS\afxprint.rc"    // 打印/打印预览资源
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

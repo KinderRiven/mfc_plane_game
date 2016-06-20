@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2DAAE81A-E291-4E6F-BD1D-171899134C86}</ProjectGuid>
+    <RootNamespace>MyGame</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AboutMe.h" />
+    <ClInclude Include="AllHurt.h" />
+    <ClInclude Include="AllLife.h" />
+    <ClInclude Include="AllScore.h" />
+    <ClInclude Include="AllSpeed.h" />
+    <ClInclude Include="BackGround.h" />
+    <ClInclude Include="BOSS1.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="Enemy1.h" />
+    <ClInclude Include="Enemy2.h" />
+    <ClInclude Include="Enemy3.h" />
+    <ClInclude Include="Enemy4.h" />
+    <ClInclude Include="Enemy5.h" />
+    <ClInclude Include="Explo.h" />
+    <ClInclude Include="GameContrl.h" />
+    <ClInclude Include="GameLevel.h" />
+    <ClInclude Include="GameMessage.h" />
+    <ClInclude Include="GameNature.h" />
+    <ClInclude Include="GameSetting.h" />
+    <ClInclude Include="GameWord.h" />
+    <ClInclude Include="Game_Lv.h" />
+    <ClInclude Include="Help.h" />
+    <ClInclude Include="Hero.h" />
+    <ClInclude Include="HeroS.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MyGame.h" />
+    <ClInclude Include="MyGameDoc.h" />
+    <ClInclude Include="MyGameView.h" />
+    <ClInclude Include="PersonState.h" />
+    <ClInclude Include="Plane.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Talking.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Things.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AboutMe.cpp" />
+    <ClCompile Include="AllHurt.cpp" />
+    <ClCompile Include="AllLife.cpp" />
+    <ClCompile Include="AllScore.cpp" />
+    <ClCompile Include="AllSpeed.cpp" />
+    <ClCompile Include="BackGround.cpp" />
+    <ClCompile Include="BOSS1.cpp" />
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="Enemy1.cpp" />
+    <ClCompile Include="Enemy2.cpp" />
+    <ClCompile Include="Enemy3.cpp" />
+    <ClCompile Include="Enemy4.cpp" />
+    <ClCompile Include="Enemy5.cpp" />
+    <ClCompile Include="Explo.cpp" />
+    <ClCompile Include="GameContrl.cpp" />
+    <ClCompile Include="GameLevel.cpp" />
+    <ClCompile Include="GameMessage.cpp" />
+    <ClCompile Include="GameNature.cpp" />
+    <ClCompile Include="GameSetting.cpp" />
+    <ClCompile Include="GameWord.cpp" />
+    <ClCompile Include="Game_Lv.cpp" />
+    <ClCompile Include="Help.cpp" />
+    <ClCompile Include="Hero.cpp" />
+    <ClCompile Include="HeroS.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MyGame.cpp" />
+    <ClCompile Include="MyGameDoc.cpp" />
+    <ClCompile Include="MyGameView.cpp" />
+    <ClCompile Include="PersonState.cpp" />
+    <ClCompile Include="Plane.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Talking.cpp" />
+    <ClCompile Include="Things.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MyGame.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\MSI-057\Documents\Visual Studio 2013\Projects\MyGame\MyGame\res\BOSS1_副本.bmp" />
+    <Image Include="res\Begin.bmp" />
+    <Image Include="res\bg1.bmp" />
+    <Image Include="res\bg2.bmp" />
+    <Image Include="res\bg4.bmp" />
+    <Image Include="res\bgwin.bmp" />
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\BOOSK子弹.bmp" />
+    <Image Include="res\BOSS1_副本.bmp" />
+    <Image Include="res\BOSS2.bmp" />
+    <Image Include="res\BOSS3.bmp" />
+    <Image Include="res\BOSS子弹.bmp" />
+    <Image Include="res\bullet1.bmp" />
+    <Image Include="res\BulletL.bmp" />
+    <Image Include="res\enemy1.bmp" />
+    <Image Include="res\enemy3.bmp" />
+    <Image Include="res\e_Big.bmp" />
+    <Image Include="res\e_Little.BMP" />
+    <Image Include="res\e_Mid.BMP" />
+    <Image Include="res\GameEnd.bmp" />
+    <Image Include="res\gb3.bmp" />
+    <Image Include="res\hero1-1.bmp" />
+    <Image Include="res\Hero2.bmp" />
+    <Image Include="res\Hero4.bmp" />
+    <Image Include="res\Hero_Player2.bmp" />
+    <Image Include="res\MyGame.ico" />
+    <Image Include="res\player1-1.bmp" />
+    <Image Include="res\Player1.bmp" />
+    <Image Include="res\score1.bmp" />
+    <Image Include="res\score1_1.bmp" />
+    <Image Include="res\T1.bmp" />
+    <Image Include="res\T2.bmp" />
+    <Image Include="res\T3.bmp" />
+    <Image Include="res\T4.bmp" />
+    <Image Include="res\Talk10.bmp" />
+    <Image Include="res\Talk11.bmp" />
+    <Image Include="res\Talk12.bmp" />
+    <Image Include="res\Talk13.bmp" />
+    <Image Include="res\Talk14.bmp" />
+    <Image Include="res\Talk15.bmp" />
+    <Image Include="res\Talk16.bmp" />
+    <Image Include="res\Talk17.bmp" />
+    <Image Include="res\Talk18.bmp" />
+    <Image Include="res\Talk19.bmp" />
+    <Image Include="res\Talk3.bmp" />
+    <Image Include="res\Talk4.bmp" />
+    <Image Include="res\Talk5.bmp" />
+    <Image Include="res\Talk6.bmp" />
+    <Image Include="res\Talk7.bmp" />
+    <Image Include="res\Talk8.bmp" />
+    <Image Include="res\Talk9.bmp" />
+    <Image Include="res\人物1_副本2.bmp" />
+    <Image Include="res\人物状态栏2-3.bmp" />
+    <Image Include="res\人物状态栏2.bmp" />
+    <Image Include="res\人物状态栏2_副本.bmp" />
+    <Image Include="res\合体BOSSX.bmp" />
+    <Image Include="res\大型敌机00.bmp" />
+    <Image Include="res\子弹00.BMP" />
+    <Image Include="res\对话1.bmp" />
+    <Image Include="res\对话2.bmp" />
+    <Image Include="res\导弹.bmp" />
+    <Image Include="res\敌人.bmp" />
+    <Image Include="res\敌机子弹04.BMP" />
+    <Image Include="res\敌直升机.bmp" />
+    <Image Include="res\敌直升机X.bmp" />
+    <Image Include="res\敌直升机Y.bmp" />
+    <Image Include="res\沙漠背景.bmp" />
+    <Image Include="res\炸弹准备.bmp" />
+    <Image Include="res\轰炸！.bmp" />
+    <Image Include="res\闪电子弹.bmp" />
+    <Image Include="res\黄色飞机右.bmp" />
+    <Image Include="res\黄色飞机右上.bmp" />
+    <Image Include="res\黄色飞机左.bmp" />
+    <Image Include="res\黄色飞机左上.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource.hm" />
+    <None Include="res\MyGame.rc2" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="MyGame.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

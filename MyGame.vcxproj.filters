@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyGame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGameDoc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGameView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BackGround.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMessage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameNature.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Hero.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Explo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PersonState.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameWord.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BOSS1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Game_Lv.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameContrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AboutMe.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Help.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AllSpeed.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AllLife.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AllScore.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AllHurt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLevel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Talking.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Things.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy4.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy5.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HeroS.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSetting.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MyGame.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGameDoc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGameView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BackGround.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMessage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GameNature.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Plane.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Hero.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Explo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PersonState.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GameWord.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BOSS1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_Lv.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GameContrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AboutMe.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Help.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AllSpeed.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AllLife.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AllScore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AllHurt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLevel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Talking.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Things.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy4.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy5.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HeroS.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSetting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MyGame.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\MyGame.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bg1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bg2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\gb3.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\hero1-1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\enemy1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bullet1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\e_Big.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\e_Little.BMP">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\e_Mid.BMP">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Player1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\player1-1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\人物1_副本2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\score1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\score1_1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\enemy3.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\敌机子弹04.BMP">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\子弹00.BMP">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\闪电子弹.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Begin.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\黄色飞机右.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\黄色飞机右上.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\黄色飞机左.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\黄色飞机左上.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\大型敌机00.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\BOSS子弹.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\GameEnd.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\BOSS2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\BOSS3.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bg4.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\BulletL.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bgwin.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Hero2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\人物状态栏2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\人物状态栏2_副本.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\人物状态栏2-3.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Hero_Player2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Hero4.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\轰炸！.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\合体BOSSX.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\BOOSK子弹.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\炸弹准备.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\对话1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\对话2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Talk3.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Talk4.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Talk5.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Talk6.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Talk7.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Talk8.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Talk9.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\T1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\T2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\T3.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\T4.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\敌人.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\敌直升机.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\敌直升机X.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\敌直升机Y.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\导弹.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\沙漠背景.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\BOSS1_副本.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Talk10.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Talk11.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Talk12.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Talk13.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Talk14.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Talk15.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Talk16.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Talk17.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Talk18.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Talk19.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="C:\Users\MSI-057\Documents\Visual Studio 2013\Projects\MyGame\MyGame\res\BOSS1_副本.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\MyGame.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="resource.hm">
+      <Filter>头文件</Filter>
+    </None>
+  </ItemGroup>
+</Project>
